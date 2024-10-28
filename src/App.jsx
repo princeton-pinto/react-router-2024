@@ -8,6 +8,8 @@ import ContactLayout from './layout/ContactLayout.jsx'
 import ContactInfo from './components/ContactInfo.jsx'
 import ContactForm from './components/ContactForm.jsx'
 import NotFound from './components/NotFound.jsx'
+import JobsLayout from './layout/JobsLayout.jsx'
+import Jobs, { jobsLoader } from './pages/Jobs.jsx'
 
 const App = () => {
   
@@ -22,6 +24,9 @@ const App = () => {
             <Route path='form' element={<ContactForm />} />
           </Route>
           <Route path='*' element={<NotFound />}/>
+          <Route path='jobs' element={<JobsLayout />}>
+            <Route index element={<Jobs />} loader={jobsLoader}/>
+          </Route>
       </Route>
     )
   )
