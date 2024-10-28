@@ -32,5 +32,5 @@ npx json-server --watch data.json --port 5000
 - React will run on http://localhost:3000
 
 ```bash
-- npm run dev
+npm run dev
 ```
