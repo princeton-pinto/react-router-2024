@@ -10,15 +10,27 @@ Currently, two official plugins are available:
 
 ------------------------------------------------------------
 # React Router Project:
-https://www.youtube.com/watch?v=943D7U74_sQ&t=1043s
 
-Usage
+[YouTube crash course](https://www.youtube.com/watch?v=943D7U74_sQ&t=1043s).
+
+
+## Usage
+
 - This project uses JSON-Server for a mock backend.
 
-Run JSON Server
-- The server will run on http://localhost:5000
-- npx json-server --watch data.json --port 5000
+### Run JSON Server
 
-Run Vite Frontend
+- The server will run on http://localhost:5000
+
+```bash
+npx json-server --watch data.json --port 5000
+```
+
+
+### Run Vite Frontend
+
 - React will run on http://localhost:3000
+
+```bash
 - npm run dev
+```
